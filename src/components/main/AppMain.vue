@@ -1,11 +1,15 @@
 <script>
+import HeroMainTop from "./HeroMainTop.vue";
 export default {
   name: "AppMain",
+  components: {
+    HeroMainTop,
+  },
 };
 </script>
 
 <template>
-  <h1>main</h1>
+  <HeroMainTop />
 </template>
 
 <style lang="scss" scoped></style>
