@@ -1,16 +1,9 @@
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-export default {
-  components: {
-    HelloWorld,
-  },
-};
+export default {};
 </script>
 
 <template>
-  <div>
-    <HelloWorld />
-  </div>
+  <div></div>
 </template>
 
 <style lang="scss">
