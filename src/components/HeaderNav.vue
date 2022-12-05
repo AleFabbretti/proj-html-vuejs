@@ -3,7 +3,7 @@ export default {
   name: "HeaderNav",
   data() {
     return {
-      links: ["HOME", "PAGES", "COURSES", "FEATURES", "BLOG", "SHOP"],
+      links: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
     };
   },
 };
@@ -30,6 +30,7 @@ export default {
       padding: 20px 10px;
       text-decoration: none;
       color: black;
+      font-size: 16px;
     }
   }
 }
