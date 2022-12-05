@@ -2,3 +2,5 @@
 IMPORT BOOTSTRAP
 ----------------*/
 @import "/node_modules/bootstrap/scss/bootstrap";
+@import "./partials/reset.scss";
+@import "./partials/typography.scss";

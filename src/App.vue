@@ -1,5 +1,9 @@
+import
+
 <script>
-export default {};
+export default {
+  components: {},
+};
 </script>
 
 <template>
