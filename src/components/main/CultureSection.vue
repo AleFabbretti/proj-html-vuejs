@@ -24,7 +24,7 @@ export default {
 
 <template>
   <section class="culture">
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-between">
       <div class="col-left pt-5">
         <h6>EVERYTHING IN <span>MAX COACH</span></h6>
         <h2 class="mb-3">
@@ -42,7 +42,7 @@ export default {
       </div>
       <div class="col-right pt-5">
         <img
-          class="position-relative"
+          class="position-relative w-100"
           src="../../assets/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
           alt="stock"
         />
@@ -64,8 +64,8 @@ export default {
       </div>
     </div>
   </section>
-  <div class="container d-flex" v-for="number in numbers">
-    <div class="date">
+  <div class="container d-flex justify-content-center">
+    <div class="date" v-for="number in numbers">
       <h1>{{ number.number }}</h1>
       <p>{{ number.description }}</p>
     </div>
@@ -108,27 +108,27 @@ export default {
   margin-left: 120px;
   position: relative;
   & img {
+    max-width: 100%;
     border-radius: 5px;
-    position: absolute;
     z-index: 1;
   }
   & .about-us {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -95px;
     z-index: 1;
     border-radius: 10px;
   }
   & .shape-02 {
     position: absolute;
     bottom: 0;
-    right: 120px;
+    right: 100px;
     z-index: 2;
   }
   & .shape-03 {
     position: absolute;
-    top: 5px;
-    right: 100px;
+    top: 10px;
+    right: 0;
     z-index: 0;
   }
 }

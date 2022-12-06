@@ -41,6 +41,10 @@ export default {
       font-weight: bold;
       border-radius: 5px;
     }
+    & button:hover {
+      color: white;
+      background-color: #20aea5;
+    }
   }
   & .hero-menu {
     position: absolute;

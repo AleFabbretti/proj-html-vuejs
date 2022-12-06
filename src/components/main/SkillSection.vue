@@ -7,12 +7,12 @@ export default {
 <template>
   <section class="skills">
     <div class="container d-flex justify-content-center position-relative">
-      <img
-        class="position-absolute bottom-0 end-60"
-        src="../../assets/maxcoach-shape-07.png"
-        alt="shape07"
-      />
       <div class="col-left pt-5">
+        <img
+          class="shape07 position-absolute bottom-0"
+          src="../../assets/maxcoach-shape-07.png"
+          alt="shape07"
+        />
         <img
           class="stock"
           src="../../assets/stock-full-hd-11-670x450.jpg"
@@ -24,7 +24,7 @@ export default {
           alt="shape05"
         />
         <img
-          class="svg position-absolute top-0 start-0"
+          class="svg position-absolute top-0"
           src="../../assets/svg-0.svg"
           alt="svg0"
         />
@@ -81,7 +81,6 @@ export default {
   position: relative;
   flex-grow: 1;
   display: flex;
-  justify-content: flex-end;
   & .stock {
     width: 90%;
     border-radius: 5px;
@@ -94,11 +93,19 @@ export default {
     left: 50%;
     margin: -40px 0 0 -25px;
     z-index: 3;
+    cursor: pointer;
   }
   & .shape {
-    top: 80px;
-    left: 0;
+    top: 120px;
+    left: -100px;
     z-index: 1;
+  }
+  .shape07 {
+    right: 145px;
+  }
+  .svg {
+    left: -60px;
+    opacity: 0.1;
   }
 }
 </style>

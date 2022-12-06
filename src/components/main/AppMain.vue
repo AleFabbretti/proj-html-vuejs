@@ -18,10 +18,19 @@ export default {
 
 <template>
   <HeroMainTop />
-  <CultureSection />
-  <SkillSection />
-  <CoursesSection />
+  <section class="gradient">
+    <CultureSection />
+    <SkillSection />
+    <CoursesSection />
+    <img class="final" src="../../assets/svg-1.svg" alt="svg1" />
+  </section>
   <AppReviews />
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.gradient {
+  background: linear-gradient(white, #f6f6f6);
+  & .final {
+  }
+}
+</style>
