@@ -10,7 +10,7 @@ export default {
       Lists: [
         {
           Image: "course-02-480x298.jpg",
-          price: "$40",
+          price: "$40.00",
           description: "Learning to write as a professional Author.",
           lessons: "20 lessons",
           students: "50 students",
@@ -42,6 +42,14 @@ export default {
     <div class="cards container">
       <CardCourses v-for="List in Lists" :info="List" />
     </div>
+    <div class="courses pt-5">
+      <p>
+        Control your personal preference settings to get notified about <br />
+        appropriate courses.<a href="#" class="mx-2"
+          >View all courses <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </p>
+    </div>
   </section>
 </template>
 
@@ -50,5 +58,11 @@ export default {
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
+}
+.courses a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid lightgray;
+  font-weight: bold;
 }
 </style>
