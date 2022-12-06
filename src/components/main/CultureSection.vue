@@ -1,6 +1,24 @@
 <script>
 export default {
   name: "CultureSection",
+  data() {
+    return {
+      numbers: [
+        {
+          number: "129+",
+          description: "ENROLLED LEARNERS",
+        },
+        {
+          number: "80",
+          description: "FINISCED SESSIONS",
+        },
+        {
+          number: "4%",
+          description: "SATISFACTION RATE",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -46,6 +64,12 @@ export default {
       </div>
     </div>
   </section>
+  <div class="container d-flex" v-for="number in numbers">
+    <div class="date">
+      <h1>{{ number.number }}</h1>
+      <p>{{ number.description }}</p>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -54,7 +78,7 @@ export default {
 }
 
 .col-left {
-  width: 25%;
+  width: 30%;
   padding-bottom: 90px;
   & h6 {
     color: grey;
@@ -81,9 +105,10 @@ export default {
 .col-right {
   width: 50%;
   padding-bottom: 90px;
-  margin-left: 200px;
+  margin-left: 120px;
   position: relative;
   & img {
+    border-radius: 5px;
     position: absolute;
     z-index: 1;
   }
@@ -105,6 +130,16 @@ export default {
     top: 5px;
     right: 100px;
     z-index: 0;
+  }
+}
+
+.date h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #20ad96;
+  & p {
+    color: grey;
+    font-weight: bold;
   }
 }
 </style>
