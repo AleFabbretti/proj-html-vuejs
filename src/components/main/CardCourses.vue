@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-  <div class="card container">
+  <div class="card">
     <img :src="`/src/assets/${info.Image}`" alt="" />
     <div class="description">
       <h4 class="mt-3">{{ info.price }}</h4>

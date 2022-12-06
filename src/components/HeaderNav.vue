@@ -3,7 +3,32 @@ export default {
   name: "HeaderNav",
   data() {
     return {
-      links: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
+      menu: [
+        {
+          label: "Home",
+          link: "/",
+        },
+        {
+          label: "Pages",
+          link: "/pages",
+        },
+        {
+          label: "Courses",
+          link: "/courses",
+        },
+        {
+          label: "Features",
+          link: "/features",
+        },
+        {
+          label: "Blog",
+          link: "/blog",
+        },
+        {
+          label: "Shop",
+          link: "/shop",
+        },
+      ],
     };
   },
 };
@@ -12,8 +37,8 @@ export default {
 <template>
   <nav class="main-nav">
     <ul class="d-flex justify-content-center">
-      <li v-for="link in links">
-        <a href="#">{{ link }}</a>
+      <li v-for="item in menu">
+        <a href="{{ item.link }}">{{ item.label }}</a>
       </li>
     </ul>
   </nav>

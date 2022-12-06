@@ -22,7 +22,15 @@ export default {
     <CultureSection />
     <SkillSection />
     <CoursesSection />
-    <img class="final" src="../../assets/svg-1.svg" alt="svg1" />
+    <svg
+      class="final"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      height="100"
+    >
+      <path class="elementor-shape-fill" d="M0 0v100h100V0Q50 200 0 0" />
+    </svg>
   </section>
   <AppReviews />
 </template>
@@ -31,6 +39,8 @@ export default {
 .gradient {
   background: linear-gradient(white, #f6f6f6);
   & .final {
+    fill: white;
+    width: 100%;
   }
 }
 </style>

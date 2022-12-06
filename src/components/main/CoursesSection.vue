@@ -39,7 +39,7 @@ export default {
   <section class="container text-center pt-5">
     <h6 class="pb-4">JOIN MAX COACH AT BEST</h6>
     <h1>Latest online <span>Courses</span></h1>
-    <div class="cards container">
+    <div class="cards">
       <CardCourses v-for="List in Lists" :info="List" />
     </div>
     <div class="courses pt-5">

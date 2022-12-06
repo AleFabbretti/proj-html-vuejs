@@ -23,7 +23,7 @@ export default {
         ></span>
       </div>
       <div class="col-right pt-5 position-relative">
-        <div class="testimonials">
+        <div class="testimonials fade">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
             natus quia alias quis deserunt tempora unde est amet sequi quidem et
@@ -31,7 +31,35 @@ export default {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
             laboriosam praesentium assumenda. Corrupti ab maxime quidem earum
             incidunt voluptatibus, deserunt ducimus illum? Quasi minima quos est
-            optio magnam tempore reprehenderit.
+            optio magnam tempore reprehenderit. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Fugiat natus quia alias quis deserunt
+            tempora unde est amet sequi quidem et vitae molestias ipsa
+            laboriosam, labore vero perspiciatis sed sit. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Cupiditate laboriosam praesentium
+            assumenda. Corrupti ab maxime quidem earum incidunt voluptatibus,
+            deserunt ducimus illum? Quasi minima quos est optio magnam tempore
+            reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Fugiat natus quia alias quis deserunt tempora unde est amet
+            sequi quidem et vitae molestias ipsa laboriosam, labore vero
+            perspiciatis sed sit. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Cupiditate laboriosam praesentium assumenda.
+            Corrupti ab maxime quidem earum incidunt voluptatibus, deserunt
+            ducimus illum? Quasi minima quos est optio magnam tempore
+            reprehenderit.
+          </p>
+          <img src="../../assets/testimonial-avata-02.jpg" alt="avatar02" />
+        </div>
+        <div class="testimonials upper">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            natus quia alias quis deserunt tempora unde est amet sequi quidem et
+            vitae molestias ipsa laboriosam, labore vero perspiciatis sed sit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            laboriosam praesentium assumenda. Corrupti ab maxime quidem earum
+            incidunt voluptatibus, deserunt ducimus illum? Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Labore iusto aperiam ab suscipit,
+            sunt eveniet hic enim pariatur soluta corporis distinctio amet
+            maxime iste iure quod similique unde ea nihil.
           </p>
           <img src="../../assets/testimonial-avata-02.jpg" alt="avatar02" />
         </div>
@@ -77,38 +105,26 @@ export default {
   padding-bottom: 90px;
   margin-left: 120px;
   position: relative;
-  & img {
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
-  }
-  & .about-us {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    border-radius: 10px;
-  }
-  & .shape-02 {
-    position: absolute;
-    bottom: 0;
-    right: 120px;
-    z-index: 2;
-  }
-  & .shape-03 {
-    position: absolute;
-    top: 5px;
-    right: 100px;
-    z-index: 0;
-  }
   & .testimonials {
-    height: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 35px rgba($color: #000000, $alpha: 0.15);
+    padding: 20px;
+    border-radius: 20px;
     & img {
       width: 50px;
       border-radius: 50%;
-      position: absolute;
-      bottom: 0;
     }
+  }
+  .fade {
+    opacity: 0.2;
+  }
+  .upper {
+    width: 120%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 </style>
