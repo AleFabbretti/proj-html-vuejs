@@ -103,4 +103,8 @@ button {
   font-weight: bold;
   background-color: #20ad96;
 }
+button:hover {
+  background-color: white;
+  color: #20ad96;
+}
 </style>

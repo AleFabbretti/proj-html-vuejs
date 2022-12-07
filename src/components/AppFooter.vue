@@ -18,7 +18,7 @@ export default {
         ><i class="fa-regular fa-copyright"></i> 2020 MaxCoach. All Rights
         Reserved</span
       >
-      <a href="#top" id="moving-top">
+      <a class="top">
         <i class="fa-solid fa-arrow-up"></i>
       </a>
     </div>
@@ -29,6 +29,7 @@ export default {
 footer {
   background-color: #171621;
   margin-top: 80px;
+  position: relative;
   & .mycontainer {
     width: 900px;
     margin: auto;
@@ -36,6 +37,18 @@ footer {
   & .copyright {
     color: #abab95;
     font-size: 10px;
+  }
+  & .top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #20ad96;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
   }
 }
 </style>

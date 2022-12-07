@@ -54,4 +54,9 @@ button {
   font-weight: bold;
   border-radius: 0 5px 5px 0;
 }
+
+button:hover {
+  background-color: white;
+  color: #20ad96;
+}
 </style>
