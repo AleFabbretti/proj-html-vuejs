@@ -15,9 +15,7 @@ export default {
       <p>{{ info.description }}</p>
       <div class="details d-flex justify-content-start">
         <span>{{ info.lessons }}</span>
-        <span class="mx-5"
-          ><i class="fa-solid fa-user mx-2"></i>{{ info.students }}</span
-        >
+        <span class="mx-5">{{ info.students }}</span>
       </div>
     </div>
   </div>

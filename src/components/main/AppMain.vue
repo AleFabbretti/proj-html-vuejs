@@ -5,6 +5,8 @@ import SkillSection from "./SkillSection.vue";
 import CoursesSection from "./CoursesSection.vue";
 import AppReviews from "./AppReviews.vue";
 import TransformSection from "./TransformSection.vue";
+import BlogSection from "./BlogSection.vue";
+import NewsLetter from "./NewsLetter.vue";
 export default {
   name: "AppMain",
   components: {
@@ -14,6 +16,8 @@ export default {
     CoursesSection,
     AppReviews,
     TransformSection,
+    BlogSection,
+    NewsLetter,
   },
 };
 </script>
@@ -36,6 +40,8 @@ export default {
   </section>
   <AppReviews />
   <TransformSection />
+  <BlogSection />
+  <NewsLetter />
 </template>
 
 <style lang="scss" scoped>
