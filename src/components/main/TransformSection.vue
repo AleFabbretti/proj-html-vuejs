@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex container justify-content-center position-relative">
+  <div class="d-flex container justify-content-between position-relative">
     <img
       class="shape01 position-absolute"
       src="../../assets/maxcoach-shape-01.png"

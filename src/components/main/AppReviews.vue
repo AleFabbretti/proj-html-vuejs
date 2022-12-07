@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section class="culture">
-    <div class="container d-flex justify-content-center">
+    <div class="container d-flex justify-content-between">
       <div class="col-left">
         <h6>TESTIMONIALS</h6>
         <h2 class="mb-3">
