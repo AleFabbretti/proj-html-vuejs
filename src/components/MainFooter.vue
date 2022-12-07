@@ -55,7 +55,7 @@ export default {
 <template>
   <div class="main-footer container py-5 px-0">
     <div class="agency">
-      <div class="agency__address">
+      <div class="address">
         <h5 class="mb-3">Address</h5>
         <small class="street">382 NE 191st # 87394 Miami, FL 33179-3899</small>
         <small class="number"
@@ -63,7 +63,7 @@ export default {
         >
         <small class="email">support@maxcoach.com</small>
       </div>
-      <div class="agency__social mt-4">
+      <div class="social mt-4">
         <a href="#">
           <i class="fa-brands fa-square-facebook"></i>
         </a>
@@ -81,7 +81,7 @@ export default {
     <nav class="menu-links">
       <ul class="">
         <h5 class="mb-3">Explore</h5>
-        <li v-for="link in exploreMenu" class="mb-2">
+        <li class="mb-2" v-for="link in exploreMenu">
           <a :href="link.href">{{ link.label }}</a>
         </li>
       </ul>
@@ -89,7 +89,7 @@ export default {
     <nav class="menu-links">
       <ul class="">
         <h5 class="mb-3">Information</h5>
-        <li v-for="link in informationMenu" class="mb-2">
+        <li class="mb-2" v-for="link in informationMenu">
           <a :href="link.href">{{ link.label }}</a>
         </li>
       </ul>
@@ -107,11 +107,11 @@ export default {
     font-weight: bolder;
     color: white;
   }
-  & .agency__address small {
+  & .address small {
     display: block;
     margin-bottom: 5px;
   }
-  & .agency__social a {
+  & .social a {
     color: #b4b4b4;
     margin-right: 30px;
     &:hover {

@@ -13,7 +13,7 @@ export default {
     <div class="mycontainer d-flex justify-content-between">
       <MainFooter />
     </div>
-    <div>
+    <div class="pb-4">
       <span class="copyright d-flex justify-content-center"
         ><i class="fa-regular fa-copyright"></i> 2020 MaxCoach. All Rights
         Reserved</span
