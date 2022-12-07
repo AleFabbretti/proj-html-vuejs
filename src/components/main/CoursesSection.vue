@@ -42,6 +42,15 @@ export default {
     <div class="cards">
       <CardCourses v-for="List in Lists" :info="List" />
     </div>
+    <div>
+      <ul class="d-flex justify-content-center mt-4">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
     <div class="courses pt-5">
       <p>
         Control your personal preference settings to get notified about <br />
@@ -64,5 +73,15 @@ export default {
   color: black;
   border-bottom: 1px solid lightgray;
   font-weight: bold;
+}
+
+li {
+  margin-right: 25px;
+  scale: 150%;
+  color: lightgrey;
+  &:first-child {
+    color: black;
+    scale: 200%;
+  }
 }
 </style>

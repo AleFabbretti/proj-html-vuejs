@@ -4,6 +4,7 @@ import CultureSection from "./CultureSection.vue";
 import SkillSection from "./SkillSection.vue";
 import CoursesSection from "./CoursesSection.vue";
 import AppReviews from "./AppReviews.vue";
+import TransformSection from "./TransformSection.vue";
 export default {
   name: "AppMain",
   components: {
@@ -12,6 +13,7 @@ export default {
     SkillSection,
     CoursesSection,
     AppReviews,
+    TransformSection,
   },
 };
 </script>
@@ -33,6 +35,7 @@ export default {
     </svg>
   </section>
   <AppReviews />
+  <TransformSection />
 </template>
 
 <style lang="scss" scoped>

@@ -91,7 +91,7 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -40px 0 0 -25px;
+    margin: -40px 0 0 -135px;
     z-index: 3;
     cursor: pointer;
   }

@@ -65,7 +65,7 @@ export default {
     </div>
   </section>
   <div class="container d-flex justify-content-center">
-    <div class="date" v-for="number in numbers">
+    <div class="date mx-5 pt-4" v-for="number in numbers">
       <h1>{{ number.number }}</h1>
       <p>{{ number.description }}</p>
     </div>
@@ -135,7 +135,7 @@ export default {
 
 .date h1 {
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   color: #20ad96;
   & p {
     color: grey;

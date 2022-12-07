@@ -34,7 +34,7 @@ export default {
   }
   & .description {
     margin-left: 20px;
-    width: 70%;
+    width: 60%;
     text-align: start;
     & h4 {
       font-weight: bolder;
@@ -42,10 +42,14 @@ export default {
     }
     & p {
       font-weight: bolder;
+      cursor: pointer;
+    }
+    & p:hover {
+      color: #20ad96;
     }
     & .details span {
       color: grey;
-      font-size: small;
+      font-size: 12px;
     }
   }
 }
